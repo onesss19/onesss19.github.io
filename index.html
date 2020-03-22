@@ -340,10 +340,7 @@
 
       
         
-          
-            <a id="more"></a>
-
-<p>闲来无事决定学习一下网络爬虫，看的是莫烦的<a href="https://www.bilibili.com/video/av17920849?p=1" target="_blank" rel="noopener">教学视频</a>，顺便做一下笔记，同时也意味着博客之旅正式开始</p>
+          <p>闲来无事决定学习一下网络爬虫，看的是莫烦的<a href="https://www.bilibili.com/video/av17920849?p=1" target="_blank" rel="noopener">教学视频</a>，顺便做一下笔记，同时也意味着博客之旅正式开始</p>
 <h3 id="urllib库"><a href="#urllib库" class="headerlink" title="urllib库"></a>urllib库</h3><h5 id="常见用法："><a href="#常见用法：" class="headerlink" title="常见用法："></a>常见用法：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line">html = urlopen(<span class="string">"url"</span>.read().decode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="comment">#如果有中文，才需要使用decode('utf-8')</span></span><br></pre></td></tr></table></figure>
 <h3 id="re库"><a href="#re库" class="headerlink" title="re库"></a>re库</h3><p>正则学习参考廖雪峰的<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017639890281664" target="_blank" rel="noopener">博客</a></p>
 <h5 id="常见用法：-1"><a href="#常见用法：-1" class="headerlink" title="常见用法："></a>常见用法：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">result=re.findall(<span class="string">r"&lt;title&gt;(.+?)&lt;/title&gt;"</span>,html)</span><br></pre></td></tr></table></figure>
@@ -366,8 +363,13 @@
 <h5 id="常见用法3：request库的iter-content函数"><a href="#常见用法3：request库的iter-content函数" class="headerlink" title="常见用法3：request库的iter_content函数"></a>常见用法3：request库的iter_content函数</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">    r = requests.get(IMAGE_URL, stream=<span class="literal">True</span>)</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'./img/image3.png'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> chunk <span class="keyword">in</span> r.iter_content(chunk_size=<span class="number">32</span>):</span><br><span class="line">            f.write(chunk)</span><br></pre></td></tr></table></figure>
 <p>ps:对于比较大的文件而言，显然这是更好的用法</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>简单的做了点记录，后面还有更高级的多线程，多进程，异步和更高级的scrapy库用法，下次再写吧。<br>万事开头难，希望写博客这件事可以一直坚持。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/08/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
