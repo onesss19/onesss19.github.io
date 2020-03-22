@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="闲来无事决定学习一下网络爬虫，看的是莫烦的教学视频，顺便做一下笔记，同时也意味着博客之旅正式开始 urllib库常见用法：123from urllib.request import urlopenhtml &#x3D; urlopen(&quot;url&quot;.read().decode(&#39;utf-8&#39;))#如果有中文，才需要使用decode(&#39;utf-8&#39;) re库正则学习参考廖雪峰的博客 常见用法：12import">
+<meta name="description" content="1234title: 爬虫学习笔记1date: 2020-03-08 12:12:12categories: - python  闲来无事决定学习一下网络爬虫，看的是莫烦的教学视频，顺便做一下笔记，同时也意味着博客之旅正式开始 urllib库常见用法：123from urllib.request import urlopenhtml &#x3D; urlopen(&quot;url&quot;.read().decode(&#39;u">
 <meta property="og:type" content="article">
 <meta property="og:title" content="爬虫学习笔记1">
 <meta property="og:url" content="http://yoursite.com/2020/03/08/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/index.html">
 <meta property="og:site_name" content="Ssssone">
-<meta property="og:description" content="闲来无事决定学习一下网络爬虫，看的是莫烦的教学视频，顺便做一下笔记，同时也意味着博客之旅正式开始 urllib库常见用法：123from urllib.request import urlopenhtml &#x3D; urlopen(&quot;url&quot;.read().decode(&#39;utf-8&#39;))#如果有中文，才需要使用decode(&#39;utf-8&#39;) re库正则学习参考廖雪峰的博客 常见用法：12import">
+<meta property="og:description" content="1234title: 爬虫学习笔记1date: 2020-03-08 12:12:12categories: - python  闲来无事决定学习一下网络爬虫，看的是莫烦的教学视频，顺便做一下笔记，同时也意味着博客之旅正式开始 urllib库常见用法：123from urllib.request import urlopenhtml &#x3D; urlopen(&quot;url&quot;.read().decode(&#39;u">
 <meta property="og:locale" content="zh">
 <meta property="article:published_time" content="2020-03-08T08:37:40.841Z">
-<meta property="article:modified_time" content="2020-03-22T09:10:05.898Z">
+<meta property="article:modified_time" content="2020-03-22T09:25:06.928Z">
 <meta property="article:author" content="Ssssone">
 <meta name="twitter:card" content="summary">
 
@@ -299,7 +299,9 @@
       
 
       
-        <p>闲来无事决定学习一下网络爬虫，看的是莫烦的<a href="https://www.bilibili.com/video/av17920849?p=1" target="_blank" rel="noopener">教学视频</a>，顺便做一下笔记，同时也意味着博客之旅正式开始</p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 爬虫学习笔记1</span><br><span class="line">date: 2020-03-08 12:12:12</span><br><span class="line">categories: </span><br><span class="line">- python</span><br></pre></td></tr></table></figure>
+
+<p>闲来无事决定学习一下网络爬虫，看的是莫烦的<a href="https://www.bilibili.com/video/av17920849?p=1" target="_blank" rel="noopener">教学视频</a>，顺便做一下笔记，同时也意味着博客之旅正式开始</p>
 <h3 id="urllib库"><a href="#urllib库" class="headerlink" title="urllib库"></a>urllib库</h3><h5 id="常见用法："><a href="#常见用法：" class="headerlink" title="常见用法："></a>常见用法：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line">html = urlopen(<span class="string">"url"</span>.read().decode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="comment">#如果有中文，才需要使用decode('utf-8')</span></span><br></pre></td></tr></table></figure>
 <h3 id="re库"><a href="#re库" class="headerlink" title="re库"></a>re库</h3><p>正则学习参考廖雪峰的<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017639890281664" target="_blank" rel="noopener">博客</a></p>
 <h5 id="常见用法：-1"><a href="#常见用法：-1" class="headerlink" title="常见用法："></a>常见用法：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">result=re.findall(<span class="string">r"&lt;title&gt;(.+?)&lt;/title&gt;"</span>,html)</span><br></pre></td></tr></table></figure>
